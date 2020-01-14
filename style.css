@@ -66,7 +66,7 @@ body, html{
   }
   
   .box > img {
-    width: 200%;
+    width: 113%;
     height: calc(100% - 10vh);
     object-fit: cover; 
     transition: .5s;
@@ -102,7 +102,11 @@ body, html{
 .forth{
     background: url(./assets/photos/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg);
     min-height: 90% !important;
+    /* height: 50vh; */
+    opacity: .95;
 }
+  
+
 .first, .second, .third, .forth{
     position: relative;
     background-position: center;
@@ -110,6 +114,28 @@ body, html{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.info-container{
+    text-align: right;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+.input-field label {
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+.input-field :focus + label {
+    color: white !important;
+}
+.input-field{
+    color: white;
+}
+
+.input-field :focus {
+    color: white;
+    text-shadow: 0 0 10px black;
+
+  }
 
 @media (max-width: 400px) {
     .heading {
