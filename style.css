@@ -11,6 +11,9 @@ body, html{
     min-height: 100%;
     opacity: .95;
 }
+.one{
+    background-color: white;
+}
 .heading{
     position: absolute;
     top: 40%;
@@ -37,12 +40,14 @@ body, html{
     background: url(./assets/photos/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg);
     min-height: 60%;
     opacity: 120%;
+
 }
 
 
 .projects{
     color: white;
-    padding-top: 20px;
+    padding-top: 10px;
+    
 }
 .flex-container{
     display: flex;
@@ -51,10 +56,16 @@ body, html{
     flex-direction: row;
     font-weight: 600;
     color: white;
+    margin-bottom: 10px;
 }
+/* .links{
+    margin-top: -20px;
+    margin-bottom: 30px;
+} */
 a{
     color: white;
 }
+
 .project-photos{
     width: 85%;
     border-radius: 10px;
@@ -167,11 +178,20 @@ a{
   footer{
       padding: 5px;
       background: rgb(58, 58, 58);
+      color: rgb(199, 199, 199);
 
 
 
 
   }
+@media (max-width: 550px){
+    .flex-container{
+        display: unset;
+    }
+    .sites{
+        flex-direction: column;
+    }
+}
 
 @media (max-width: 400px) {
     .heading {
