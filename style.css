@@ -35,12 +35,31 @@ body, html{
 
 .second{
     background: url(./assets/photos/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg);
-    min-height: 80%;
+    min-height: 60%;
+    opacity: 120%;
 }
+
+
 .projects{
     color: white;
     padding-top: 20px;
 }
+.flex-container{
+    display: flex;
+}
+.sites{
+    flex-direction: row;
+    font-weight: 600;
+    color: white;
+}
+a{
+    color: white;
+}
+.project-photos{
+    width: 85%;
+    border-radius: 10px;
+}
+
 .two{
     background: rgb(58, 58, 58);
     color: white;
@@ -92,6 +111,12 @@ body, html{
     min-height: 60%;
     /* opacity: .80; */
 }
+.three{
+    background: rgb(58, 58, 58);
+    color: white;
+    padding: 1px;
+
+}
 .heading3{
     padding-top: 20px;
     margin-top: 0;
@@ -99,6 +124,9 @@ body, html{
     text-shadow: 0 0 10px black;
 }
 
+.row{
+    margin-bottom: 0;
+}
 .forth{
     background: url(./assets/photos/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg);
     min-height: 90% !important;
@@ -134,6 +162,14 @@ body, html{
 .input-field :focus {
     color: white;
     text-shadow: 0 0 10px black;
+
+  }
+  footer{
+      padding: 5px;
+      background: rgb(58, 58, 58);
+
+
+
 
   }
 
