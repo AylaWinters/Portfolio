@@ -214,6 +214,13 @@ a{
      font-size: 50px;
      line-height: 60px;
   }
+  .fab:hover{
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    transition: .7s ease;
+    
+}
   footer{
       padding: 5px;
       background: rgb(58, 58, 58);
