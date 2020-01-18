@@ -45,9 +45,10 @@ h1,h2{
 }
 
 .second{
-    background: url(./assets/photos/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg);
+    background: url(./assets/photos/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg) no-repeat center center/cover;
     min-height: 60%;
     opacity: 120%;
+    max-height: 170%;
     
 
 }
@@ -60,6 +61,8 @@ h1,h2{
 }
 .flex-container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .sites{
     flex-direction: row;
@@ -72,9 +75,20 @@ a{
 }
 
 .project-photos{
-    width: 85%;
+    margin: 15px;
+    width: 300px;
+    height: 210px;
     border-radius: 10px;
+    position: relative;
+    animation: projects;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
+@keyframes projects{
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
 
 .project-photos:hover{
     flex: 1 1 50%;
@@ -190,6 +204,12 @@ a{
 .my-email{
     font-size: 25px;
 }
+.my-email:hover{    
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    transition: .7s ease;
+}
 .input-field label {
     color: white;
     font-size: 25px;
@@ -243,19 +263,14 @@ a{
         font-size: 200%;
         line-height: 5px;
     }
+    .projects-photos{
+        flex-wrap: wrap;
+
+    }
     }
 @media (max-width: 600px){
-    .flex-container{
-        display: unset;
-    }
-    .sites{
-        flex-direction: column;
-    }
     .info-container{
         text-align: center;
-    }
-    .second{
-        height: 340%;
     }
     .info-container{
         padding-top: 0;
@@ -269,9 +284,7 @@ a{
 }
 
 @media (max-width: 550px) {
-    .second{
-        height: 320%;
-    }
+    
 }
 @media (max-width: 500px) {
     .heading{
@@ -281,14 +294,9 @@ a{
         font-size: 175%;
         line-height: 0;
     }
-    .second{
-        height: 290%;
-    }
-    }
+}
 @media (max-width: 450px) {
-    .second{
-        height: 265%;
-    }
+   
 }
 
 @media (max-width: 400px) {
@@ -298,7 +306,12 @@ a{
     .subheading{
         font-size: 120%;
     }
+}
+@media (max-width: 350px) {
+    .project-photos{
+        margin: 0;
+    }   
     .second{
-        height: 235%;
+        height: 150%;
     }
 }
