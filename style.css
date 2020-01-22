@@ -86,9 +86,9 @@ body, html{
 @keyframes reveal {
       0% {opacity:0;width:0px;}
       20% {opacity:1;width:0px;}
-      30% {width:470px;}
+      30% {width:490px;}
       80% {opacity:1;}
-      100% {opacity:1;width:470px;}
+      100% {opacity:1;width:490px;}
 }
   
 
@@ -320,6 +320,15 @@ a{
 
 
   }
+@media (max-width: 1200){
+    @keyframes reveal {
+        0% {opacity:0;width:0px;}
+        20% {opacity:1;width:0px;}
+        30% {width:450px;}
+        80% {opacity:1;}
+        100% {opacity:1;width:450px;}
+  }
+}  
 
 @media (max-width: 750px){
     .heading{
@@ -327,12 +336,18 @@ a{
     }
     .subheading{
         font-size: 200%;
-        line-height: 5px;
+        top: 330px;
     }
     .projects-photos{
         flex-wrap: wrap;
-
     }
+    @keyframes reveal {
+        0% {opacity:0;width:0px;}
+        20% {opacity:1;width:0px;}
+        30% {width:310px;}
+        80% {opacity:1;}
+        100% {opacity:1;width:310px;}
+  }
     }
 @media (max-width: 600px){
     .info-container{
@@ -358,8 +373,28 @@ a{
     }
     .subheading{
         font-size: 175%;
-        line-height: 0;
+        line-height: 1;
+        /* display: flexbox;
+        flex-direction: row;
+        flex-wrap: nowrap; */
     }
+    .other{
+        display: inline;
+    }@keyframes showup {
+        0% {opacity:1;}
+        100% {opacity:1;}
+  }
+    
+  @keyframes slidein {
+        0% { margin-left:0px; }
+        100% { margin-left:0px; }
+  }
+    
+  @keyframes reveal {
+        0% {opacity:1;width:470px;}
+        100% {opacity:1;width:470px;}
+  }
+    
 }
 @media (max-width: 450px) {
    
