@@ -19,6 +19,9 @@ body, html{
     line-height: 40px;
     padding: 20px 70px;
 }
+.one p{
+    text-align: justify;
+}
 .heading{
     position: absolute;
     top: 40%;
@@ -45,9 +48,9 @@ body, html{
   /* padding-top:40vh; */
   height:100vh;
   overflow:hidden;
-  -webkit-backface-visibility: hidden;
+  /* -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
-  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0); */
 }
 .coder { 
     /* animation-delay: 2s; */
@@ -139,7 +142,6 @@ a{
     width: 300px;
     height: 210px;
     border-radius: 10px;
-    /* position: relative; */
     animation: projects;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -148,11 +150,7 @@ a{
     backface-visibility: hidden;
     
 }
-/*  
-@keyframes projects{
-    0% { opacity: 0;}
-    100% { opacity: 1;}
-} */
+
 
 .project-photos:hover{
     flex: 1 1 50%;
@@ -217,14 +215,9 @@ a{
   left: 0;
   bottom: 0;
 }
-.snip1273 h3,
+.snip1273 h6,
 .snip1273 p {
   line-height: 1.5em;
-}
-.snip1273 h3 {
-  margin: 0 0 5px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 .snip1273 p {
   font-size: 0.8em;
@@ -253,7 +246,7 @@ a{
 }
 .snip1273:before,
 .snip1273:after {
-  height: 1px;
+  height: 2px;
   width: 0%;
 }
 .snip1273:before {
@@ -298,6 +291,13 @@ a{
 /* ================================================== */
 figcaption h6{
     text-align: center;
+}
+
+figure{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 
 .links {
@@ -448,32 +448,31 @@ figcaption h6{
     color: white;
     text-shadow: 0 0 10px black;
 
-  }
-  .contact-info{
+}
+textarea.materialize-textarea{
+    padding-bottom: 20px;
+}
+.contact-info{
       padding-top: 10%;
-  }
+}
 
-  .media{
+.media{
       letter-spacing: 7px;
      font-size: 50px;
      line-height: 60px;
-  }
-  .fab:hover{
+}
+.fab:hover{
     -webkit-transform: scale(1.5);
     -ms-transform: scale(1.5);
     transform: scale(1.5);
     transition: .7s ease;
     
 }
-  footer{
+footer{
       padding: 5px;
       background: rgb(58, 58, 58);
       color: rgb(199, 199, 199);
-
-
-
-
-  }
+}
 @media (max-width: 1200){
     @keyframes reveal {
         0% {opacity:0;width:0px;}
@@ -532,9 +531,21 @@ figcaption h6{
         flex-direction: row;
         flex-wrap: nowrap; */
     }
-    .other{
+    .phoEdu{
         display: inline;
-    }@keyframes showup {
+        
+    }
+    .one {
+        padding: 10px 0px;
+    }
+    .two {
+        padding: 10px 20px;
+    }
+    .three p {
+        padding: 30px 20px;
+    }
+    
+    @keyframes showup {
         0% {opacity:1;}
         100% {opacity:1;}
   }
