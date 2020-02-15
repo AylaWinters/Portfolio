@@ -598,7 +598,7 @@ footer {
   .two,
   .three,
   .four {
-    background-attachment: none;
+    background-attachment: scroll;
   }
 
   @keyframes showup {
