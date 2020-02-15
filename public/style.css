@@ -3,6 +3,7 @@ html {
   height: 100%;
   margin: 0;
   line-height: 140%;
+  background: rgb(58, 58, 58);
   color: #666;
   text-align: center;
   /* font-family: 'Quicksand', sans-serif; */
@@ -14,7 +15,8 @@ html {
   opacity: 0.95;
 }
 .one {
-  background-color: white;
+  background-color: rgb(58, 58, 58);
+  color: white;
   font-size: 25px;
   line-height: 40px;
   padding: 20px 70px;
@@ -138,7 +140,7 @@ h2 {
     no-repeat center center/cover;
   min-height: 60%;
   opacity: 120%;
-  max-height: 260%;
+  /* max-height: 300%; */
 }
 
 .projects {
@@ -578,9 +580,7 @@ footer {
   .subheading {
     font-size: 175%;
     line-height: 1;
-    /* display: flexbox;
-        flex-direction: row;
-        flex-wrap: nowrap; */
+    top: 47%;
   }
   .phoEdu {
     display: inline;
@@ -644,8 +644,5 @@ footer {
 @media (max-width: 350px) {
   .project-photos {
     margin: 0;
-  }
-  .second {
-    height: 150%;
   }
 }
