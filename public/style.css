@@ -594,10 +594,10 @@ footer {
   .three p {
     padding: 30px 20px;
   }
-  .one,
-  .two,
-  .three,
-  .four {
+  .first,
+  .second,
+  .third,
+  .forth {
     background-attachment: scroll;
   }
 
