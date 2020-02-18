@@ -15,7 +15,7 @@ html {
   opacity: 0.95;
 }
 .one {
-  background-color: rgb(58, 58, 58);
+  background-color: rgba(58, 58, 58);
   color: white;
   font-size: 25px;
   line-height: 40px;
@@ -201,7 +201,7 @@ a {
   width: 100%;
   color: #ffffff;
   text-align: left;
-  background-color: #000000;
+  /* background-color: #000000; */
   font-size: 16px;
 }
 .snip1273 * {
@@ -218,6 +218,7 @@ a {
 }
 .snip1273 figcaption {
   position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
   top: 0;
   right: 0;
   width: 100%;
