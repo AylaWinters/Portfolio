@@ -468,14 +468,14 @@ figure {
   text-shadow: 0 0 10px black;
 }
 
-.input-field :focus + label {
+.input-field:focus + label {
   color: white !important;
 }
 .input-field {
   color: white;
 }
 
-.input-field :focus {
+.input-field:focus {
   color: white;
   text-shadow: 0 0 10px black;
 }
@@ -484,6 +484,7 @@ textarea.materialize-textarea {
 }
 .contact-info {
   padding-top: 10%;
+  
 }
 
 .media {
@@ -497,11 +498,26 @@ textarea.materialize-textarea {
   transform: scale(1.5);
   transition: 0.7s ease;
 }
+
+.submit{
+  position: absolute;
+  left: 10px;
+  top: 60px;
+  border: white 1px solid;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
 footer {
   padding: 5px;
   background: rgb(58, 58, 58);
   color: rgb(199, 199, 199);
 }
+
+
 @media (max-width: 1200) {
   @keyframes reveal {
     0% {

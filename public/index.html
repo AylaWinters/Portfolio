@@ -231,21 +231,24 @@
               </div>
             </div>
           </div>
-          <form class="col m6 s12">
+          <form action="/contact" id="contact-form" method="post" role="form" class="col m6 s12">
             <div class="row contact-info">
               <div class="input-field col s6">
-                <input id="name" type="text" class="validate" />
+                <input id="name" type="text" class="validate" required />
                 <label for="name">Name</label>
               </div>
               <div class="input-field col s6">
-                <input id="email" type="email" class="validate" />
+                <input id="email" type="email" class="validate" required />
                 <label for="email">Email</label>
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <textarea id="message" class="materialize-textarea"></textarea>
+                  <textarea id="message" class="materialize-textarea" required></textarea>
                   <label id="messageWord" for="message">Message</label>
+                  <!-- <button class="submit" type="submit">Submit</button> -->
                 </div>
+              </div>
+              <div class="row">
               </div>
             </div>
           </form>
