@@ -135,6 +135,15 @@ h2 {
   margin-top: 20px;
 }
 
+.pdf{
+  margin: auto;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px 10px 10px 10px;
+  font-size: 30px;
+}
+
 .second {
   background: url(./assets/photos/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg)
     no-repeat center center/cover;
