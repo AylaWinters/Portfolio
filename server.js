@@ -10,9 +10,6 @@ app.use(express.static("public"));
 
 require("./routes/HTMLroutes")(app)
 
-
-
-
 app.listen(PORT, function () {
     console.log('Server listening on: http://localhost:' + PORT);
 });
