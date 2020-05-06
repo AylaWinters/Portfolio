@@ -10,7 +10,7 @@ html {
   font-family: "Playfair Display", serif;
 }
 .first {
-  background: url(./assets/photos/mediumBigTree.gif);
+  background: url(./assets/photos/20percent.jpg);
   min-height: 100%;
   opacity: 0.95;
 }
@@ -135,7 +135,7 @@ h2 {
   margin-top: 20px;
 }
 
-.pdf{
+.pdf {
   margin: auto;
   color: white;
   border: 1px solid white;
@@ -493,7 +493,6 @@ textarea.materialize-textarea {
 }
 .contact-info {
   padding-top: 10%;
-  
 }
 
 .media {
@@ -508,7 +507,7 @@ textarea.materialize-textarea {
   transition: 0.7s ease;
 }
 
-.submit{
+.submit {
   position: absolute;
   left: 10px;
   top: 60px;
@@ -525,7 +524,6 @@ footer {
   background: rgb(58, 58, 58);
   color: rgb(199, 199, 199);
 }
-
 
 @media (max-width: 1200) {
   @keyframes reveal {
