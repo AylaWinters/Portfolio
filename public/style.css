@@ -10,7 +10,7 @@ html {
   font-family: "Playfair Display", serif;
 }
 .first {
-  background: url(./assets/photos/mediumBigTree.gif);
+  background: url(./assets/photos/smallerBigTree.gif);
   min-height: 100%;
   opacity: 0.95;
 }
