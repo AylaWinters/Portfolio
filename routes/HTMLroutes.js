@@ -1,4 +1,7 @@
-var path = require("path")
+var path = require("path");
+const nodemailer = require('nodemailer');
+const GMAIL_USER = process.env.GMAIL_USER;
+const GMAIL_PASS = process.env.GMAIL_PASS;
 
 module.exports = app => {
     app.get("/", function (req, res) {
@@ -31,10 +34,10 @@ module.exports = app => {
         // Attempt to send the email
         smtpTrans.sendMail(mailOpts, (error, response) => {
             if (error) {
-                res.render('contact-failure') // Show a page indicating failure
+                console.log(error); // Show a page indicating failure
             }
             else {
-                res.render('contact-success') // Show a page indicating success
+                console.log("Success"); // Show a page indicating success
             }
         })
     })
