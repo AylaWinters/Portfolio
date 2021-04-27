@@ -8,7 +8,8 @@ app.use(express.json());
 app.use(compression())
 app.use(express.static("public"));
 
-require("./routes/HTMLroutes")(app)
+require("./routes/HTMLroutes")(app);
+// require("./routes/apiroutes")(app);
 
 app.listen(PORT, function () {
     console.log('Server listening on: http://localhost:' + PORT);

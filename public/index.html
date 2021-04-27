@@ -413,29 +413,30 @@
               action="/contact"
               id="contact-form"
               method="POST"
-              role="form"
               class="col m6 s12"
             >
               <div class="row contact-info">
                 <div class="input-field col s6">
-                  <input id="name" type="text" class="validate" required />
+                  <input id="name" name="name" type="text" class="validate" required />
                   <label for="name">Name</label>
                 </div>
                 <div class="input-field col s6">
-                  <input id="email" type="email" class="validate" required />
+                  <input id="email" name="email" type="email" class="validate" required />
                   <label for="email">Email</label>
                 </div>
                 <div class="row">
                   <div class="input-field col s12">
                     <textarea
                       id="message"
+                      name="message"
                       class="materialize-textarea"
                       required
                     ></textarea>
                     <label id="messageWord" for="message">Message</label>
-                    <button class="submit" type="submit" value="send">
+                    <a href="mailto:andre.entrekin@gmail.com" target="_blank">Submit</a>
+                    <!-- <button class="submit" type="submit" value="submit">
                       Submit
-                    </button>
+                    </button> -->
                   </div>
                 </div>
                 <div class="row"></div>
