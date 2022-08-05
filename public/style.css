@@ -62,6 +62,15 @@ html {
   white-space: nowrap;
 }
 
+.bold {
+  font-weight: 700;
+}
+
+.site-images {
+  height: 198px;
+  width: 310px;
+}
+
 .phoEdu {
   display: inline-block;
   overflow: hidden;
@@ -338,16 +347,15 @@ figure {
   font-size: 30px;
   cursor: pointer;
   text-shadow: 0 0 10px black;
-  position: absolute;
-  bottom: -30px;
-  left: 68px;
 }
+
 .snip1273:hover ~ .links {
   animation: links;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   transition: 0.2s ease;
-  position: absolute;
+  /* position: absolute; */
+  margin-top: 50px;
 }
 
 @keyframes links {
