@@ -38,5 +38,5 @@ app.post('/contact', (req, res) => {
         }
     })
 
-    console.log("emergency code");
+    console.log("even more emergency code");
 })
