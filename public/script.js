@@ -37,6 +37,4 @@ app.post('/contact', (req, res) => {
             res.render('contact-success') // Show a page indicating success
         }
     })
-
-    console.log("even more emergency code");
 })
